@@ -7,3 +7,7 @@
 @import './styles/_side-bar.css';
 @import './styles/_menu.css';
 @import './styles/_home.css';
+
+:root {
+  --tabpanel-background-color: #00000000 !important;
+}	

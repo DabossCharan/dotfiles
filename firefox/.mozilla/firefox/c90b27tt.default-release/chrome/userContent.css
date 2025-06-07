@@ -66,6 +66,10 @@
     --fxview-background-color-secondary: var(--firefoxcss-item-bg-color) !important;
     --firefoxcss-firefoxview-sticky-color: hsla(240, 2%, 13%, 0.75) !important;
     --firefoxcss-firefoxview-search-color: hsla(240, 2%, 35%, 0.5) !important;
+
+    /* Charan Added Stuff */
+    --in-content-page-background: #00000000 !important;
+    --in-content-box-background: #00000088 !important;
   }
 
 @-moz-document url(about:preferences) {
