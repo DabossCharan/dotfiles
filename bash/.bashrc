@@ -18,3 +18,4 @@ export VISUAL=nvim
 # Google Calendar. Reference ~/.config/calcurse/caldav/config
 # to figure out what environmental variables you need to create.
 source ~/.config/calcurse/caldav/.env
+alias vimdiff='nvim -d'

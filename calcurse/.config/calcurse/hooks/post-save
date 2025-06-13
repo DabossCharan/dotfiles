@@ -4,8 +4,8 @@ data_dir="$HOME/.calcurse"
 config_dir="$HOME/.calcurse"
 
 if [ ! -d "$data_dir" ]; then
-	data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/calcurse"
-	config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/calcurse"
+  data_dir="${XDG_DATA_HOME:-$HOME/.local/share}/calcurse"
+  config_dir="${XDG_CONFIG_HOME:-$HOME/.config}/calcurse"
 fi
 
 # Do not do anything when synchronizing with a CalDAV server.
@@ -13,11 +13,10 @@ fi
 
 cd "$data_dir" || exit
 if [ -d caldav ] && command -v calcurse-caldav >/dev/null; then
-	(
-		date="$(date +'%b %d %H:%M:%S')"
-		echo "$date Running calcurse-caldav from the post-save hook..."
-		calcurse-caldav
-		echo
-	) >>caldav/log 2>&1 &
+  (
+    date="$(date +'%b %d %H:%M:%S')"
+    echo "$date Running calcurse-caldav from the post-save hook..."
+    calcurse-caldav
+    echo
+  ) >>caldav/log 2>&1 &
 fi
-
