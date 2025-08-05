@@ -4,20 +4,17 @@
     font-family: JetBrainsMono Nerd Font, monospace;
     font-weight: bold;
     font-size: 14px;
-    min-height: 0px;
-    min-width: 4px;
+    min-height: 0;
 }
 
 window#waybar {
+    background: rgba(21, 18, 27, 0);
     color: #cdd6f4;
-    background: #11111b;
-    border-radius: 10px;
+    margin-left: 5px;
 }
 
 #workspaces button {
     color: #555869;
-    padding: 0px;
-    border-radius: 10px;
 }
 
 #workspaces button.active {
@@ -26,14 +23,20 @@ window#waybar {
 
 #workspaces button.focused {
     color: #a6adc8;
+    background: #eba0ac;
+    border-radius: 10px;
 }
 
 #workspaces button.urgent {
-    color: #a6adc8;
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 10px;
 }
 
 #workspaces button:hover {
-    color: #a6adc8;
+    background: #cdd6f4;
+    color: #11111b; 
+    border-radius: 10px;
 }
 
 #window,
@@ -43,43 +46,49 @@ window#waybar {
 #network,
 #workspaces,
 #backlight {
-    background: #11111b;
+    background: #1e1e2e;
     /* border: 1px solid #181825; */
 }
 
 #backlight {
-  margin: 5px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #workspaces {
-    background: #11111b;
+    background: #1e1e2e;
     border-radius: 10px;
-    margin: 5px 0px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 1px;
 }
 
 #window {
     border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
 
 #clock {
     color: #a6adc8;
+    border-radius: 10px 10px 10px 10px;
     margin-top: 20px;
-    margin-bottom: 5px;
-    padding: 0px 5px;
+    border-right: 0px;
 }
 
 #network {
     color:  #a6adc8;
-    margin: 5px 0px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio {
     color: #a6adc8;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 5px;
+    border-radius: 0px 10px 10px 0px;
 }
 
 #battery {
     color:#a6adc8;
-    margin: 5px 0px;
 }

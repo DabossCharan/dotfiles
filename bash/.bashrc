@@ -13,9 +13,4 @@ export PATH="$PATH:$HOME/.local/bin"
 export EDITOR=nvim
 export VISUAL=nvim
 
-# You Will Need to Create a .env file at the location
-# indicated if you want calcurse to work properly with
-# Google Calendar. Reference ~/.config/calcurse/caldav/config
-# to figure out what environmental variables you need to create.
-source ~/.config/calcurse/caldav/.env
-alias vimdiff='nvim -d'
+alias ikhal='vdirsyncer sync && ikhal && vdirsyncer sync'

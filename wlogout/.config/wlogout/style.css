@@ -20,13 +20,9 @@ button {
   border-radius: 0px;
   border-radius: 10px;
   margin: 50px 5px;
-  /* animation: gradient-f 20s ease-in infinite; */
-
-  /*text-decoration-color: #cdd6f4;*/
 }
 
 button:focus, button:active, button:hover {
-	/* 20% Overlay 2, 80% mantle */
 	background-color: rgb(48, 50, 66);
   background-size: 25%;
   margin: 25px 5px;
