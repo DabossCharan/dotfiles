@@ -1,9 +1,6 @@
 <h1 align="center">Chairppuccin</h1>
 
-***
-
 <br>
-<a href="https://youtu.be/KdGPDF4p5CA"><img src=".meta/assets/video-preview-youtube.png"></a>
 
 <!-- INFORMATION -->
 <table align="right">
@@ -20,11 +17,11 @@
 	</tr>
 	<tr>
 	    <td>WM</td>
-	    <td><a href="https://github.com/baskerville/bspwm">BSPWM</a> | <a href="https://hyprland.org/">Hyprland</a></td>
+	    <td><a href="https://hyprland.org/">Hyprland</a></td>
 	</tr>
 	<tr>
 	    <td>Bar</td>
-	    <td><a href="https://github.com/polybar/polybar">Polybar</a> | <a href="https://github.com/Alexays/Waybar">Waybar</a></td>
+	    <td><a href="https://github.com/Alexays/Waybar">Waybar</a></td>
 	</tr>
 	<tr>
 	    <td>Compositor</td>
@@ -44,100 +41,64 @@
 	</tr>
 	<tr>
 	    <td>Shell</td>
-	    <td><a href="https://github.com/fish-shell/fish-shell">Fish</a></td>
+	    <td><a href="">Zsh</a></td>
 	</tr>
 </table>
 <div align="left">
-	<h3> 📝 About the project</h2> 
+	<h3>About</h2> 
 	<p>
-	Meowrch is an Arch-based build sharpened to maximize performance, ergonomics, and beauty.
-	</p>
-	<h3>🚀 Features</h2>
-	<p>
-	• The system is fully configured for everyday comfortable use.<br>
-	• Wide customization options and <a href="https://github.com/meowrch/meowrch-themes">custom theme store</a><br>
-	• Hot keys are designed to ensure maximum productivity.<br>
-	• Automatic installation and configuration of the system.<br>
-	• Modern design.<br>
-	• Providing continuous and reliable support for the successful operation of the project<br>
+	My dotfiles. I like them. Inspired by lots of other rices, until I could make my own.
 	</p>
 </div>
-
-> [!WARNING]
-> THIS CONFIGURATION IS INTENDED FOR MONITORS WITH A RESOLUTION OF 1920X1080,
-> SOME SHELL FUNCTIONS MAY NOT WORK PROPERLY.
-> IN THIS CASE YOU NEED TO MAKE MANUAL CHANGES.
-> IF YOU FIND ERRORS IN THE SHELL, PLEASE REPORT THE PROBLEM.
-
 
 <!-- IMAGES -->
 <table align="center">
   <tr>
-    <td colspan="4"><img src=".meta/assets/1.png"></td>
+    <td colspan="4"><img src=""></td>
   </tr>
   <tr>
-    <td colspan="1"><img src=".meta/assets/2.png"></td>
-    <td colspan="1"><img src=".meta/assets/3.png"></td>
-    <td colspan="1"><img src=".meta/assets/4.png"></td>
+    <td colspan="1"><img src=""></td>
+    <td colspan="1"><img src=""></td>
+    <td colspan="1"><img src=""></td>
   </tr>
   <tr>
-	<td colspan="1"><img src=".meta/assets/5.png"></td>
-	<td colspan="1"><img src=".meta/assets/6.png"></td>
-	<td colspan="1"><img src=".meta/assets/7.png"></td>
+	<td colspan="1"><img src=""></td>
+	<td colspan="1"><img src=""></td>
+	<td colspan="1"><img src=""></td>
   </tr>
 </table>
 
 <!-- INSTALLATION -->
-## 🛠 Installation
-If you already have Linux Arch installed, then follow the steps below:
-### 1. Clone the repository
+## Installation
+
+### 1. Install Arch Linux.
+Pretty Important I Think.
+### 2. Clone Repository.
 ```
-git clone https://github.com/meowrch/meowrch.git
+git clone https://github.com/DabossCharan/dotfiles.git
 ```
-### 2. Go to the catalog with the project
+### 2. Change Directory.
 ```
-cd meowrch
+cd dotfiles
 ```
-### 3. Start the automatic installation
+### 3. Start Installation
 ```
 sh install.sh
 ```
 
-> [!important]
-> After installation, you **must** reboot to apply the changes.
-
-
-> [!note]
-> Instructions for navigating the installer menu:
-> - Selecting an item in the menu: Press the Spacebar to select the desired item.
-> - Advance to next step: Press Enter to advance to the next step.
-
-<h2>💻 Help</h2>
-If you have any questions or need help with the project, please visit our <a href="https://github.com/meowrch/meowrch/wiki">Wiki</a>. Here you will find useful guides and information to help you better understand how to use our product.<br><br>
-If you encounter bugs or issues that are not on our <a href="https://github.com/meowrch/meowrch/wiki">Wiki</a>, feel free to report them in the <a href="https://github.com/meowrch/meowrch/issues">Issues</a> section.
-<br><br>
-We also suggest visiting our <a href="https://t.me/meowrch">Telegram</a>, where you will find <a href="https://t.me/meowrch/9">news</a>, <a href="https://t.me/meowrch/22">reviews</a> and <a href="https://t.me/meowrch/7">quick support</a>.
-<br><br>
-Your feedback will help us improve the project and make it even more convenient for users.
-
-
 <h2>💻 Hotkeys</h2>
 <table align="center">
-	<tr>
-		<td colspan="3" align="center">Key combinations</td>
-	</tr>
     <tr>
-        <th>Name of action</th>
-        <th>Hyprland</th>
-		<th>Bspwm</th>
+        <th>Action</th>
+        <th>Hyprland Keybind</th>
     </tr>
 	<tr>
         <td>Open terminal</td>
-		<td colspan="2" align="center">super + enter</td>
+		<td align="center">super + enter</td>
     </tr>
     <tr>
         <td>Open the application menu</td>
-		<td colspan="2" align="center">super + d</td>
+		<td align="center">super + d</td>
     </tr>
 	<tr>
         <td>Open the file manager</td>
