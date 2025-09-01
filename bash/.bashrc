@@ -14,3 +14,5 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias ikhal='vdirsyncer sync && ikhal && vdirsyncer sync'
+
+. "$HOME/.local/share/../bin/env"

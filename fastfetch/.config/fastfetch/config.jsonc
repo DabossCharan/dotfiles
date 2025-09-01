@@ -23,10 +23,14 @@
       "type": "both",
     },
     "bar": {
-      "charElapsed": "•",
-      "charTotal": " ",
-      "borderLeft": "",
-      "borderRight": ""
+      "char": {
+          "elapsed": "•",
+          "total": " " 
+      },
+      "border": {
+          "left": "",
+          "right": ""
+      }
     },
     "percent": {
       "type": ["bar", "hide-others"],

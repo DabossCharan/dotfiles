@@ -1,0 +1,96 @@
+@import "colors/catppuccin-mocha"
+
+* {
+    accent-color: @pink;
+}
+
+window {
+    background-color: @crust;
+    border: 6px;
+    border-color: @accent-color;
+    border-radius: 12px;
+    padding: 0px;
+    width: 50%;
+}
+
+mainbox {
+    border: 0;
+    padding: 0px;
+}
+
+message {
+    border: 0px;
+    padding: 6px 30px;
+    /* background-color: @x0; */
+}
+
+textbox {
+    text-color: @text;
+}
+
+listview {
+    border: 0px;
+    fixed-height: 0;
+    spacing: 3px;
+    scrollbar: false;
+    lines: 6;
+    columns: 1;
+    cycle: false;
+}
+
+element {
+    border: 0;
+    padding: 7px 17px;
+}
+
+element normal.normal {
+    background-color: @crust;
+    text-color:       @text;
+}
+
+element normal.active { 
+    background-color: @crust; 
+    text-color: @text; 
+}
+
+element selected.normal { 
+    background-color: @crust; 
+    text-color:       @accent-color; 
+}
+
+element selected.active { 
+    background-color: @crust; 
+    text-color:       @accent-color; 
+}
+
+element alternate.normal { 
+    background-color: @crust; 
+    text-color: @text; 
+}
+
+element alternate.active { 
+    background-color: @crust;
+    text-color: @accent-color; 
+}
+
+inputbar {
+    spacing: 0px;
+    background-color: @crust;
+    padding: 15px 15px 5px 15px;
+    text-color: @text;
+    children: [ prompt,entry ];
+}
+
+entry {
+    spacing:    0;
+    text-color: @text;
+    placeholder: "Start typing...";
+    placeholder-color: @overlay1;
+}
+
+prompt {
+    spacing:    0;
+    border:     0;
+    padding:    0 10px 0 0;
+    text-color: @accent-color;
+}
