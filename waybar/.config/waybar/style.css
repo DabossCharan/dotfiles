@@ -1,85 +1,155 @@
+@define-color bar-bg rgba(30, 30, 46, 0);
+@define-color main-bg rgba(30, 30, 46, 0.8);
+@define-color main-fg rgba(180,190,254,1);
+@define-color wb-act-bg rgba(180,190,254,0.9);
+@define-color wb-act-fg rgba(0,0,0,0.7);
+@define-color wb-hvr-bg rgba(75,75,125,0.4);
+@define-color wb-hvr-fg rgba(174,170,240,0.8);
+
 * {
     border: none;
-    border-radius: 0;
-    font-family: JetBrainsMono Nerd Font, monospace;
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
-    font-size: 14px;
-    min-height: 0px;
-    min-width: 4px;
+    font-size: 15px;
+    min-height: 15px;
 }
 
 window#waybar {
-    color: #cdd6f4;
-    background: #11111b;
-    border-radius: 10px;
+    background: @bar-bg;
+    border-radius: 15px;
+}
+
+tooltip {
+    background: @main-bg;
+    color: @main-fg;
+    border-radius: 7px;
+    border-width: 0px;
+}
+
+#workspaces,
+#taskbar {
+    padding: 0px;
 }
 
 #workspaces button {
-    color: #555869;
+    box-shadow: none;
+	text-shadow: none;
     padding: 0px;
-    border-radius: 10px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    color: @main-fg;
+    animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-    color: #a6adc8;
-}
-
-#workspaces button.focused {
-    color: #a6adc8;
-}
-
-#workspaces button.urgent {
-    color: #a6adc8;
+    background: @wb-act-bg;
+    color: @wb-act-fg;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 #workspaces button:hover {
-    color: #a6adc8;
+    background: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    animation: ws_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#window,
-#clock,
-#battery,
-#pulseaudio,
-#network,
+#taskbar button {
+    box-shadow: none;
+	text-shadow: none;
+    padding: 0px;
+    border-radius: 9px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    color: @wb-color;
+    animation: tb_normal 20s ease-in-out 1;
+}
+
+#taskbar button.active {
+    background: @wb-act-bg;
+    color: @wb-act-color;
+    margin-left: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 3px;
+    animation: tb_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#taskbar button:hover {
+    background: @wb-hvr-bg;
+    color: @wb-hvr-color;
+    animation: tb_hover 20s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#tray menu * {
+    min-height: 16px
+}
+
+#tray menu separator {
+    min-height: 10px
+}
+
+
+#tray,
 #workspaces,
-#backlight {
-    background: #11111b;
-    /* border: 1px solid #181825; */
+#taskbar,
+#cpu,
+#custom-cpuinfo,
+#memory,
+#custom-gpuinfo,
+#clock,
+#idle_inhibitor,
+#custom-battery,
+#custom-brightness,
+#custom-volume,
+#custom-microphone,
+#language,
+#custom-system-update,
+#custom-do-not-disturb,
+#custom-vpn,
+#custom-bluetooth,
+#custom-networkmanager,
+#custom-power,
+#custom-l_end,
+#custom-r_end {
+    color: @main-fg;
+    background: @main-bg;
+    opacity: 1;
+    margin: 4px 0px 4px 0px;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
-#backlight {
-  margin: 5px 0px;
+#custom-r_end {
+    border-radius: 0px 21px 21px 0px;
+    margin-right: 9px;
+    padding-right: 3px;
 }
 
-#workspaces {
-    background: #11111b;
-    border-radius: 10px;
-    margin: 5px 0px;
+#custom-l_end {
+    border-radius: 21px 0px 0px 21px;
+    margin-left: 9px;
+    padding-left: 3px;
 }
 
-#window {
-    border-radius: 10px;
-}
-
-#clock {
-    color: #a6adc8;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    padding: 0px 5px;
-}
-
-#network {
-    color:  #a6adc8;
-    margin: 5px 0px;
-}
-
-#pulseaudio {
-    color: #a6adc8;
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
-
-#battery {
-    color:#a6adc8;
-    margin: 5px 0px;
+#custom-padd_bg {
+    background: @main-bg;
+    margin: 4px 0px 4px 0px;
 }
