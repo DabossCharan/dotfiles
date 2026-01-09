@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+WALLDIR="$HOME/.config/assets/backgrounds/"
+CACHE="$HOME/.cache/swww_last"
+mkdir -p "$(dirname "$CACHE")"
+
+# Get sorted list
+mapfile -t files < <(find "$WALLDIR" -maxdepth 1 -type f | sort)
+
+# Read last index
+last=-1
+[[ -f "$CACHE" ]] && last=$(cat "$CACHE")
+
+# Compute next index
+next=$(((last + 1) % ${#files[@]}))
+echo "$next" >"$CACHE"
+
+# Select the wallpaper path
+WALLPAPER_PATH="${files[$next]}"
+
+# Apply wallpaper with swww
+swww img --transition-duration 0.25 --transition-type center "$WALLPAPER_PATH"
+
+# --- PYWAL INTEGRATION ---
+# -i specifies the image, -n skips setting the wallpaper (since swww does it)
+# -q runs it quietly
+if command -v wal >/dev/null 2>&1; then
+    wal -q -i "$WALLPAPER_PATH" -n
+else
+    echo "Error: pywal (wal) is not installed."
+fi
+
+pywalfox update
