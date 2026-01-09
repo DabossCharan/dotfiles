@@ -1,5 +1,0 @@
---embed-thumbnail
---embed-metadata
---add-metadata 
--t mp3
--o ~/Music/%(artist)s/%(title)s.%(ext)s
