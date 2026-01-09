@@ -1,0 +1,20 @@
+{
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{icon} {windows}",
+    "format-window-separator": " ",
+    "window-rewrite": {
+        "class<kitty>": "",
+        "class<firefox>": "󰈹",
+        "class<firefox> title<.*github.*>": "󰊤",
+        "class<firefox> title<.*youtube.*>": "󰗃",
+        "class<obsidian>": "󰠮",
+        "class<steam>": "󰓓",
+    },
+    "on-click": "activate",
+    "sort-by-number": true,
+    "workspace-taskbar": {
+            "enable": false
+        }
+  },
+}

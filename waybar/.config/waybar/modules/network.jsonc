@@ -1,0 +1,12 @@
+{
+    "network": {
+        "format": "{icon}",
+        "format-icons": {
+            "wifi": "󰖩",
+            "disconnected": "󱚼",
+            "disabled": "󰖪"
+        },
+        "tooltip": true,
+        "tooltip-format": "{essid}",
+    }
+}

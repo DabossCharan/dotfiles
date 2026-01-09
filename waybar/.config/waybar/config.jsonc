@@ -1,0 +1,40 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "modules-left": [
+        "custom/power",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "mpris"
+    ],
+    // use groups (drawer)
+    "modules-right": [
+        "keyboard-state",
+        "tray",
+        "power-profiles-daemon",
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "clock"
+    ],
+    "margin": "0",
+    "spacing": "0",
+    "mode": "dock",
+    "start_hidden": false,
+    // "fixed-center": bool, sets modules-center block to middle of bar when possible, else will be centered in space between left and right block
+    "include": [
+        "~/.config/waybar/modules/bluetooth.jsonc",
+        "~/.config/waybar/modules/clock.jsonc",
+        "~/.config/waybar/modules/gamemode.jsonc",
+        "~/.config/waybar/modules/hyprland-workspaces.jsonc",
+        "~/.config/waybar/modules/keyboard-state.jsonc",
+        "~/.config/waybar/modules/mpris.jsonc",
+        "~/.config/waybar/modules/network.jsonc",
+        "~/.config/waybar/modules/custom-power.jsonc",
+        "~/.config/waybar/modules/power-profiles-daemon.jsonc",
+        "~/.config/waybar/modules/pulseaudio.jsonc",
+        "~/.config/waybar/modules/tray.jsonc"
+    ],
+    "reload_style_on_change": true
+}

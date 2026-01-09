@@ -1,0 +1,14 @@
+{
+  "bluetooth": {
+    "format-disabled": "󰂲",
+    "format-off": "󰂲",
+    "format-on": "",
+    "format-connected": "",
+    // TODO: "on-click": Make Script To Connect Device With Rofi
+    "tooltip-format": "{num_connections} connected",
+    "tooltip-format-disabled": "Bluetooth disabled",
+    "tooltip-format-off": "Bluetooth off",
+    "tooltip-format-connected": "{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}",
+  },
+}

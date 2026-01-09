@@ -1,0 +1,439 @@
+@import "../assets/colors/colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+tooltip {
+    background-color: @base;
+    border: 2px solid @mauve;
+}
+
+#bluetooth, #clock, #workspaces, #window, #keyboard-state, #mpris.playing, #mpris.paused, #mpris.stopped, #network, #custom-power, #power-profiles-daemon, #pulseaudio, #tray {
+    background-color: @base;
+    padding: 0px 9px;
+    border-top: 3px solid @accent;
+    /* margin */ 
+}
+
+/* BLUETOOTH */
+#bluetooth {
+    color: @blue;
+}
+
+#bluetooth.disabled {
+
+}
+
+#bluetooth.off {
+
+}
+
+#bluetooth.on {
+
+}
+
+#bluetooth.connected {
+
+}
+
+#bluetooth.discoverable {
+
+}
+
+#bluetooth.pairable {
+
+}
+
+#bluetooth.no-controller {
+
+}
+
+/* CLOCK */
+#clock {
+    color: @accent;
+}
+
+/* GAME MODE */
+#gamemode {
+    padding-left: 0px;
+}
+
+/* WORKSPACES */
+#workspaces {
+    padding-left: 3px;
+    padding-right: 3px;
+    /*border-top-left-radius: 15px;*/
+    border-top-right-radius: 15px;
+    /*border-left: 3px solid @accent;*/
+    border-right: 3px solid @accent;
+}
+
+#workspaces * {
+    font-size: 14px;
+}
+
+#workspaces button {
+    margin: 0px;
+}
+
+/* 
+#workspaces button:first-child {
+    border-top-left-radius: 15px;
+}
+*/
+
+#workspaces button:last-child {
+    border-top-right-radius: 15px;
+}
+
+#workspaces button label {
+    color: @accent;
+}
+
+#workspaces button.active label {
+    font-size: 20px;
+    color: @accent2;
+}
+
+#workspaces button.active {
+    border-bottom: 3px solid @accent2;
+}
+
+button.active:hover {
+    border: hidden;
+}
+
+button:hover {
+    background: @surface0;
+    border: hidden;
+    border-bottom: 4px solid @accent;
+}
+
+#workspaces .workspace-label {
+}
+
+#workspaces .taskbar-window {
+
+}
+
+#workspaces .taskbar-window.active {
+
+}
+
+/* WINDOW */
+#window {
+}
+
+window#waybar {
+    color: @text;
+    background: transparent;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+/* KEYBOARD STATE */
+#keyboard-state {
+    padding: 0px 0px;
+}
+
+#keyboard-state label {
+    padding: 0 9px;
+}
+
+#keyboard-state label.locked {
+    background-color: @surface0;
+    color: @mauve;
+    font-size: 17px;
+}
+
+/* MPRIS */
+#mpris {
+}
+
+#mpris.paused {
+    background-color: @surface0;
+    color: @mauve;
+}
+
+#mpris.playing {
+}
+/*
+#mpris.${status} {
+
+}
+
+#mpris.${player} {
+
+}
+
+*/
+
+/* POWER PROFILES DAEMON */
+#power-profiles-daemon {
+
+}
+
+#power-profiles-daemon.performance {
+    color: @yellow;
+}
+
+#power-profiles-daemon.balanced {
+    color: @accent2;
+}
+
+#power-profiles-daemon.power-saver {
+    color: @green;
+}
+
+/* PULSEAUDIO */ 
+#pulseaudio {
+
+}
+
+#pulseaudio.bluetooth {
+
+}
+
+#pulseaudio.muted {
+
+}
+
+#pulseaudio.source-muted {
+
+}
+
+/* TRAY */
+#tray {
+
+}
+
+#tray menu {
+
+}
+
+#tray > .passive {
+
+}
+
+#tray > .active {
+
+}
+
+#tray > .needs-attention {
+
+}
+
+/*
+window#waybar.hidden {
+    opacity: 0;
+}*/
+
+/*
+#pulseaudio:hover {
+    background-color: #a37800;
+}
+
+
+#mode {
+    background-color: #64727D;
+    box-shadow: inset 0 -3px #ffffff;
+}
+
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#mpd {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#power-profiles-daemon {
+    padding-right: 15px;
+}
+
+#power-profiles-daemon.performance {
+    background-color: #f53c3c;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.balanced {
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+#power-profiles-daemon.power-saver {
+    background-color: #2ecc71;
+    color: #000000;
+}
+
+label:focus {
+    background-color: #000000;
+}
+#network {
+    background-color: #2980b9;
+}
+
+#network.disconnected {
+    background-color: #f53c3c;
+}
+
+#pulseaudio {
+    background-color: #f1c40f;
+    color: #000000;
+}
+
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
+
+#wireplumber {
+    background-color: #fff0f5;
+    color: #000000;
+}
+
+#wireplumber.muted {
+    background-color: #f53c3c;
+}
+
+#custom-media {
+    background-color: #66cc99;
+    color: #2a5c45;
+    min-width: 100px;
+}
+
+#custom-media.custom-spotify {
+    background-color: #66cc99;
+}
+
+#custom-media.custom-vlc {
+    background-color: #ffa000;
+}
+
+#temperature {
+    background-color: #f0932b;
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray {
+    background-color: #2980b9;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#idle_inhibitor {
+    background-color: #2d3436;
+}
+
+#idle_inhibitor.activated {
+    background-color: #ecf0f1;
+    color: #2d3436;
+}
+
+#mpd {
+    background-color: #66cc99;
+    color: #2a5c45;
+}
+
+#mpd.disconnected {
+    background-color: #f53c3c;
+}
+
+#mpd.stopped {
+    background-color: #90b1b1;
+}
+
+#mpd.paused {
+    background-color: #51a37a;
+}
+
+#language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#scratchpad.empty {
+	background-color: transparent;
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: white;
+}
+
+#privacy-item.screenshare {
+    background-color: #cf5700;
+}
+
+#privacy-item.audio-in {
+    background-color: #1ca000;
+}
+
+#privacy-item.audio-out {
+    background-color: #0069d4;
+}
+*/

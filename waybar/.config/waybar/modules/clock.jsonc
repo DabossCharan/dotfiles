@@ -1,0 +1,7 @@
+{
+  "clock": {
+    "format": "{:%H:%M\n%a %m/%d}",
+    // TODO: "on-click": " hyprctl dispatch workspace 23", Bring Up Calendar
+    "tooltip": false
+  },
+}

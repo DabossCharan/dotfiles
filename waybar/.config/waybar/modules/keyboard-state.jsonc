@@ -1,0 +1,10 @@
+{
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format-icons": {
+            "locked": "󱎚",
+            "unlocked": "󰿆"
+        },
+    }
+}
